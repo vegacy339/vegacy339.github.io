@@ -184,6 +184,32 @@ main {
     border: 3px solid #8284bf;
 }
 
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error-block {
+    margin-top: 20px;
+    display: flex;
+    color: white;
+    background-color: #383da8;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 3px solid #242aa3;
+    flex-direction: column;
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.error-block:hover {
+    border: 3px solid #8284bf;
+}
+
 @media (max-width: 767px) {
     body {
         background-repeat: no-repeat;
@@ -231,6 +257,10 @@ main {
     }
 
     .techstack-block {
+        width: 90%;
+    }
+
+    .error-block {
         width: 90%;
     }
 }
